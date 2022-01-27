@@ -1,0 +1,120 @@
+/* Style the side navigation */
+.sidenav {
+  position: fixed;
+  overflow-x: show;
+  overflow-y: scroll;
+  top: 5px; /*100px to give some room for the sidebar heading (without this, absolute position will make the nav overlap)*/
+  left: 5px; /* you can make this zero and add `padding-left: 15px` */
+  bottom: 15px; /* leave some room for copyright section */
+  right: 75%; /*this may vary from browser to browser (i suggest using the width of the widest scrollbar, then adjust for padding-right)*/
+}
+
+.sidenav .container{
+    max-width: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: 75%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  align: left;
+  text-align: left;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 25%;
+  margin-right: 0%;
+}
+
+/* Style the profile picture */ 
+.avatar {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: solid 3px #00ff15;
+  border-width: 4px;
+}
+
+/* Style the profile picture */ 
+.avatar-small {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   background-color: transparent;
+   color: black;
+   text-align: right;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  .accordion {
+  background-color: #f5fff5;
+  color: #000000;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #f5fff5; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #f5fff5;
+  overflow: show;
+}
+
+  .accordion:after {
+  content: '▼';
+  color: #000000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "▲";
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}

@@ -1,94 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<title>Zambia .• zero2050.net</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Zambia • Net Zero 2050</title>
+<meta name="description" content="Net Zero Zambia by 2050. We're here to make Net Zero Open. Search zero2050.net to find out more. #NetZeroOpen">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-
-body {
-  margin: 0;
-  font-family: 'Space Mono', monospace;
-  background-color: hsl(120, 100%, 98%);
-}
-  
-  <style>
-body {
-  color: blue;
-}
-h1 {
-  font-family: 'Space Mono', monospace;
-  letter-spacing: 2px;
-  color: black;
-  font-size: 30px
-}
-h2 {
-  color: #ff0000;
-  font-size: 40px;
-}
-p1 {
-  font-family: 'Space Mono', monospace;
-  font-size: 20px;
-  }
-p2 {
-  font-family: 'Space Mono', monospace;
-  font-size: 10px;
-  }
-p3 {
-  font-family: 'Space Mono', monospace;
-  font-size: 60px;
-  }
-p4 {
-  font-family: 'Space Mono', monospace;
-  font-size: 70px;
-</style>
 </head>
+  <style>
+    
+.accordion {
+  background-color: #f5fff5;
+  color: #000000;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #f5fff5; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #f5fff5;
+  overflow: show;
+}
+
+  .accordion:after {
+  content: '▼';
+  color: #00ff15;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "▲";
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #efffe5;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #efffe5;
+}
+    
+  </style>
+<header>
+
+	<div class="container">
+
+		<div class="profile">
+
+			<div class="profile-image">
+
+				<img src="zm.png" alt="Zero Ecosystems Lab">
+
+			</div>
+
+			<div class="profile-user-settings">
+
+				<h1 class="profile-user-name"><p4 id="demo"></p4></h1>
+
+				<button class="btn profile-edit-btn">Net Zero 2050</button>
+
+				<button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+
+			</div>
+
+			<div class="profile-stats">
+
+				<ul>
+					<li><a href="https://zero2030.net"><span class="profile-stat-count"><img src="ZEL.png" alt="Zero Ecosystems Lab icon" width="40" height="40"></span> 2030</a></li>
+					<li><a href="https://zero2040.net"><span class="profile-stat-count"><img src="ZEL.png" alt="Zero Ecosystems Lab icon" width="40" height="40"></span> 2040</a></li>
+					<li><a href="https://zero2050.net"><span class="profile-stat-count"><img src="ZEL.png" alt="Zero Ecosystems Lab icon" width="40" height="40"></span> 2050</a></li>
+				</ul>
+			</div>
+      <div class="profile-bio">
+	      <p4>Zambia</pr>
+			</div>
+
+		</div>
+		<!-- End of profile section -->
+
+	</div>
+	<!-- End of container -->
+
+</header>
+
+
+</main>
 <body>
+<script>
+var names = ['こんにちは', '안녕하세요', 'hola', 'bonjour', 'hallo', '你好', 'أهلا', 'नमस्ते', 'שלום', 'olá'];
 
-<div class="sidenav">
-  <a href="https://zero2050.net"><img src="zm.png" alt="Avatar" class="avatar"></a>
-  <p>Zambia</p>
-  <p2><a href="https://parisagreement.zero2050.net" target="_blank">1.5°C Paris Agreement goal</a></p2>
-</div>
+setInterval(function() {
+  var rand = Math.floor(Math.random() * 10);
+  document.getElementById("name").innerHTML = names[rand];
+}, 1250);
+</script>
 
-<div class="content">
-  <br>
-  <p4 id="demo"></p4>
-  <br>
-  
-  <p>Warming @ rate of</p>
-  <p4>1.77°C ± 0.27°C</p4>
-  <p2>per century since 1960</p2>
-  <br>
-  <p>2020</p>
-  <p4>+1.6°C</p4>
-  <p2>Relative to a late 19th century baseline</p2>
-  <br>
-  <p>2100</p>
-  <p4>+4.0°C</p4>
-  <p2>Relative to a late 19th century baseline</p2>
-  <br>
-  <p>Source: <a href="http://berkeleyearth.org/" target="_blank">Berkeley Earth</a></p>
-  <br>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <script>
+<center><p4><div id="name">hello</div></p4></center> 
+<br>
+<br>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<center><div class="elfsight-app-36e61e23-b08e-4aa9-aca9-a63e3513491e"></div></center>
+<br>
+<script>
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -105,9 +143,6 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
   <br>
-  <br>
-  <br>
-
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 1, 2050 00:00:00").getTime();
@@ -138,40 +173,28 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
-  
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
+  <script src="script.js"></script>
+</body>
+  </div>
+<div class="footer-basic">
+        <footer>
+		<center>
+                <p><a href="https://zero2050.net">Hello</a><p>
+                <p><a href="https://zero2050.net/privacy.html">Privacy</a><p>
+		</center>
+<br>
+<div class="elfsight-app-a55da353-2da4-438c-b6cc-736fb14e07af"></div>
+        </footer>
+    </div>
+<br>
+<center>
+<div class="elfsight-app-b325ebf2-622e-42ea-b60f-526a97f85f1b"></div></center>
+<br>
+<br>
+<br>
  <div class="footer">
- <p1>⦿ Carbon Neutral</p1>
- <p><a href="https://github.blog/2021-04-22-environmental-sustainability-github/" target="_blank">• zero2050.net ○ GitHub</a></p>
- <br>
- <p2> Zero Ecosystem is a not for profit company limited by guarantee (Company No. 13349586) registered in England, United Kingdom </p2>
- <br>
-  <img src="favicon.png"
-       width="25px";
-       height="25px">
-
- <p2> Created in Liverpool </p2>
+ <p1> Zero Ecosystem is a not for profit company limited by guarantee (Company No. 13349586) registered in England, United Kingdom </p1>
 </div>
 
-</body>
 </html>
